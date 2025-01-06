@@ -8,9 +8,13 @@
 
 body {
   font-family: "Source Sans 3", serif;
+}
+
+.pd-x {
   padding: 0 1.25em;
 }
 
+/* Navbar */
 .title {
   display: flex;
   align-items: center;
@@ -18,6 +22,7 @@ body {
   font-family: Roboto, serif;
   font-size: 0.875rem; /* 14px */
   color: #0e0e0e;
+  text-decoration: none;
 }
 
 .img-logo {
@@ -26,10 +31,6 @@ body {
 }
 
 @media only screen and (min-width: 876px) {
-  body {
-    padding: 0 3.3125em;
-  }
-
   .title {
     font-size: 1.25rem; /* 20px */
   }
@@ -45,7 +46,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 59px;
-
   max-width: 1085px;
   margin: 0 auto;
 }
@@ -70,5 +70,61 @@ body {
 
   .menu-item {
     font-size: 1rem;
+  }
+}
+
+/* Hero */
+.hero-container {
+  height: 293px;
+  background-image: url("/images/hero-post.svg");
+  background-size: cover;
+  color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.5em; /* 8px */
+  max-width: 374px;
+  height: 100%;
+  padding-bottom: 1.5625em; /* 25px */
+}
+
+.hero-content {
+  font-size: 0.75rem; /* 12px */
+}
+
+.hero-content h2 {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  line-height: 1.082;
+}
+
+@media only screen and (min-width: 876px) {
+  .hero-container {
+    height: 468px;
+    max-width: 1085px;
+    margin: 0 auto;
+    border-radius: 3px;
+  }
+
+  .pd-x {
+    padding: 0 3.3125em;
+  }
+
+  .hero-content {
+    font-size: 1rem;
+    max-width: 700px;
+    padding-bottom: 3.125em; /* 50px */
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  .hero-content p {
+    max-width: 590px;
+    text-shadow: 5px 5px 50px black;
   }
 }
