@@ -1,12 +1,74 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Source Sans 3", serif;
+  font-family: "Source Sans 3", serif;
+  padding: 0 1.25em;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+  font-family: Roboto, serif;
+  font-size: 0.875rem; /* 14px */
+  color: #0e0e0e;
+}
+
+.img-logo {
+  width: 23.16px;
+  height: 23.16px;
+}
+
+@media only screen and (min-width: 876px) {
+  body {
+    padding: 0 3.3125em;
+  }
+
+  .title {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .img-logo {
+    width: 34.25px;
+    height: 34.25px;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 59px;
+
+  max-width: 1085px;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.875em;
+}
+
+.menu-item {
+  color: #090909;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 876px) {
+  .navbar-container {
+    height: 83px;
+  }
+
+  .menu-item {
+    font-size: 1rem;
+  }
+}
